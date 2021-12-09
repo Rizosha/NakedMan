@@ -20,6 +20,8 @@ public class CharacterMovement : MonoBehaviour
 
     private Vector3 moveDir;
 
+    
+
    
     void Update()
     {
@@ -51,6 +53,9 @@ public class CharacterMovement : MonoBehaviour
 
         controller.Move(velocity * Time.fixedDeltaTime); 
         
-      
+        
+        
     }
+    
+    
 }

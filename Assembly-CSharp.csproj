@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\GenerateLevel.cs" />
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\Dash.cs" />
+     <Compile Include="Assets\Scripts\PlayerRotation.cs" />
+     <Compile Include="Assets\Scripts\MousePoint.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Unity/2020.3.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
