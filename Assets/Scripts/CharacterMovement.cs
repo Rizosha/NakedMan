@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,49 +14,84 @@ public class CharacterMovement : MonoBehaviour
     
     private Vector3 velocity;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
     private bool isGrounded;
 
     private Vector3 moveDir;
 
+    [SerializeField] Transform player;
+    [SerializeField] Transform respawn;
     
+    
+    
+    
+    private float interval;
+    public float saveTime;
+    private bool waitingSave = false;
+    
+     public float normalSpeed;
+     public float bonusSpeed;
+    private bool shootReloading;
 
-   
+    private void Start()
+    {
+        speed = normalSpeed;
+    }
+
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
         
         // takes input from unity controller
-        
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = new Vector3(x, z).normalized;
-        
-       
-        
+
+        //Vector3 moveDir = new Vector3(x, z).normalized;
+
+
         // creates a transform based off input
-        
         Vector3 move = transform.right * x + transform.forward * z;
-        
+
+
         // moves the character using speed and delta time 
-        
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(Vector3.ClampMagnitude(move, 1) * speed * Time.deltaTime);
+        //controller.Move(move * speed * Time.deltaTime);
 
-        
+
+        // apply gravity
         velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.fixedDeltaTime);
 
-        controller.Move(velocity * Time.fixedDeltaTime); 
-        
-        
-        
+        if (interval < saveTime)
+                    {
+                        waitingSave = true;
+                    }
+                     
+                    if (waitingSave)
+                    {
+                        interval += Time.deltaTime;
+                        if (interval >= saveTime)
+                        { 
+                            if (Input.GetKeyDown(KeyCode.Space))
+                            {
+                                     
+                                    controller.Move(Vector3.ClampMagnitude(move,2 ) * bonusSpeed * Time.fixedDeltaTime);
+                                    waitingSave = false;
+                                    interval = 0; 
+                            }
+                            
+                        }
+                    }
+
+      
+        Debug.Log(interval);
     }
-    
-    
 }
+
+
+
+
+
+
+ 
+
