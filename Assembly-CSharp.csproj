@@ -55,79 +55,76 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\UnusedMovement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-     <Compile Include="Assets\Scripts\ObjectPooling.cs" />
+     <Compile Include="Assets\Scripts\ObjectPooling\ObjectPooling.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-     <Compile Include="Assets\Scripts\HealthPack.cs" />
-     <Compile Include="Assets\Scripts\PlayerPooling.cs" />
-     <Compile Include="Assets\Scripts\FSM\NPC\NPCSimplePatrol.cs" />
+     <Compile Include="Assets\Scripts\Pickups\HealthPack.cs" />
+     <Compile Include="Assets\Scripts\ObjectPooling\PlayerPooling.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\NPC\NPCSimplePatrol.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-     <Compile Include="Assets\Scripts\PlayerRotation.cs" />
-     <Compile Include="Assets\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerRotation.cs" />
+     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-     <Compile Include="Assets\Scripts\Laser.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\Laser.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-     <Compile Include="Assets\Scripts\FSM\NPC\NPCcode.cs" />
-     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\NPC\NPCcode.cs" />
+     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-     <Compile Include="Assets\Scripts\MainCamera.cs" />
-     <Compile Include="Assets\Scripts\RespawnPoint.cs" />
-     <Compile Include="Assets\Scripts\FSM\SimplePatrol.cs" />
-     <Compile Include="Assets\Scripts\Ammo.cs" />
+     <Compile Include="Assets\Scripts\UI\MainCamera.cs" />
+     <Compile Include="Assets\Scripts\Player\RespawnPoint.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\SimplePatrol.cs" />
+     <Compile Include="Assets\Scripts\UI\Ammo.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-     <Compile Include="Assets\Scripts\PickupKey.cs" />
-     <Compile Include="Assets\Scripts\SpawnKey.cs" />
+     <Compile Include="Assets\Scripts\Pickups\PickupKey.cs" />
+     <Compile Include="Assets\Scripts\Pickups\SpawnKey.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-     <Compile Include="Assets\Scripts\CharacterHealth.cs" />
+     <Compile Include="Assets\Scripts\Player\CharacterHealth.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\OldCharacterMovement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-     <Compile Include="Assets\Scripts\GroundFalling.cs" />
-     <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\BrandNewAi.cs" />
+     <Compile Include="Assets\Scripts\Player\GroundFalling.cs" />
+     <Compile Include="Assets\Scripts\Player\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BrandNewAi.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-     <Compile Include="Assets\Scripts\FSM\AbstractFSMState.cs" />
-     <Compile Include="Assets\Scripts\Waypoint.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\AbstractFSMState.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Waypoint.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\GenerateLevel.cs" />
-     <Compile Include="Assets\Scripts\SpawnPlayer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-     <Compile Include="Assets\Scripts\FSM\States\PatrolState.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\States\PatrolState.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\OnlineMovement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
-     <Compile Include="Assets\Scripts\BulletEnd.cs" />
-     <Compile Include="Assets\Scripts\FSM\States\IdleState.cs" />
+     <Compile Include="Assets\Scripts\Player\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\States\IdleState.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-     <Compile Include="Assets\Scripts\ballRotation.cs" />
-     <Compile Include="Assets\Scripts\MousePoint.cs" />
-     <Compile Include="Assets\Scripts\Drone.cs" />
-     <Compile Include="Assets\Scripts\poolKey.cs" />
-     <Compile Include="Assets\Scripts\Dash.cs" />
+     <Compile Include="Assets\Scripts\Player\ballRotation.cs" />
+     <Compile Include="Assets\Scripts\Player\MousePoint.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\Drone.cs" />
+     <Compile Include="Assets\Scripts\ObjectPooling\poolKey.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Billboard.cs" />
-     <Compile Include="Assets\Scripts\DoorUnlock.cs" />
-     <Compile Include="Assets\Scripts\PlayerAimWeapon.cs" />
+     <Compile Include="Assets\Scripts\UI\Billboard.cs" />
+     <Compile Include="Assets\Scripts\Pickups\DoorUnlock.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\PlayerAimWeapon.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-     <Compile Include="Assets\Scripts\Shooting.cs" />
-     <Compile Include="Assets\Scripts\FSM\NPC\NPCMove.cs" />
+     <Compile Include="Assets\Scripts\Player\Shooting.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\NPC\NPCMove.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-     <Compile Include="Assets\Scripts\FSM\FiniteStateMachine.cs" />
+     <Compile Include="Assets\Scripts\UnusedScripts\FSM\FiniteStateMachine.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Scripts\WinGame.cs" />
+     <Compile Include="Assets\Scripts\UI\WinGame.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -376,7 +373,7 @@
  <HintPath>D:/Unity/2020.3.21f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Unity/2020.3.21f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -724,79 +721,79 @@
  <HintPath>D:/Unity/2020.3.21f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Runtime">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>D:/Unity/RTSBattle/NakedMan/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>D:/Unity/Unity Projects/NakedMan/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
