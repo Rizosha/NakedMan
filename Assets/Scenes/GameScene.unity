@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1267,8 +1267,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209242418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.29, y: -1.329, z: -3.348}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 1.29, y: -0.45, z: -3.348}
+  m_LocalScale: {x: 0.2, y: 0, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -4586,7 +4586,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869028074}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b626ab619a9dcbe479541f23e0c38ec9, type: 3}
@@ -7756,7 +7756,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &1364422787
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7769,10 +7769,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1364422788
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7878,7 +7880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428810559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.367, z: 0}
+  m_LocalPosition: {x: 0, y: -0.316, z: -0.111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2094544210}
@@ -10986,7 +10988,7 @@ GameObject:
   - component: {fileID: 2094544208}
   - component: {fileID: 2094544212}
   - component: {fileID: 2094544213}
-  - component: {fileID: 2094544211}
+  - component: {fileID: 2094544214}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -11005,13 +11007,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.9
-  m_Radius: 0.21
+  m_Height: 0.4
+  m_Radius: 0.14
   m_SlopeLimit: 0
   m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.0001
-  m_Center: {x: 0, y: 0.09, z: 0}
+  m_Center: {x: 0, y: -0.05, z: 0}
 --- !u!114 &2094544209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11037,7 +11039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094544207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.296, y: -0.093, z: -3.167}
+  m_LocalPosition: {x: -1.296, y: -0.2077835, z: -3.167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 21176942}
@@ -11047,20 +11049,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2094544211
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094544207}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.21
-  m_Height: 0.9
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2094544212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11099,12 +11087,25 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 512
-  gizmo: 0.15
+  gizmo: 0.01
   respawn: {fileID: 1756305439}
   respawnTimeElapsed: 0
   respawnTime: 1.5
   respawnBool: 0
   groundCheck: {fileID: 1428810559}
+--- !u!114 &2094544214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094544207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3205b5a0034e4c848a32cdb7ec704067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cross: {fileID: 2800000, guid: fe5775d6826191c49aeb03f2b5a058c4, type: 3}
 --- !u!1 &2098363934
 GameObject:
   m_ObjectHideFlags: 0
