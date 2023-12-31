@@ -295,6 +295,9 @@
      <Reference Include="log4netPlastic">
      <HintPath>C:\PersonalStorage\UnityProjects\NakedMan\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
+     <Reference Include="ICSharpCode.NRefactory">
+     <HintPath>C:\PersonalStorage\UnityProjects\NakedMan\Library\PackageCache\com.unity.render-pipelines.core@10.10.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+     </Reference>
      <Reference Include="nunit.framework">
      <HintPath>C:\PersonalStorage\UnityProjects\NakedMan\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
