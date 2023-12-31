@@ -13,7 +13,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Mouse
   - Water
   - UI
   - 
@@ -21,7 +21,7 @@ TagManager:
   - Player
   - Ground
   - roof
-  - Mouse
+  - 
   - pbullet
   - Key
   - 

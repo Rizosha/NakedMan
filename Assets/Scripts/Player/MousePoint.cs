@@ -13,10 +13,14 @@ public class MousePoint : MonoBehaviour
         //stores a ray from your mouse into the world
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         
+       
+        
         // if the raycast hits the provided layer mask, transform the cube to the location. 
         if (Physics.Raycast(ray,out RaycastHit raycastHit, float.MaxValue,_layerMask))
         {
             transform.position = raycastHit.point;
         }
+        
+     
     }
 }
