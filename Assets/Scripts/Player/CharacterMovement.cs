@@ -6,7 +6,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
  
-    
+    public Rigidbody rb;
     public CharacterController controller;
     public float speed = 12f;
     public float gravity = -9.81f;
@@ -29,13 +29,15 @@ public class CharacterMovement : MonoBehaviour
 
 
         // moves the character using speed and delta time 
-        controller.Move(Vector3.ClampMagnitude(move, 1) * speed * Time.deltaTime);
-        
-        
+        //controller.Move(Vector3.ClampMagnitude(move, 1) * speed * Time.deltaTime);
+        rb.MovePosition(rb.position + Vector3.ClampMagnitude(move, 1) * speed * Time.deltaTime);
+
         // apply gravity
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.fixedDeltaTime);
+        //velocity.y += gravity * Time.deltaTime;
+       // controller.Move(velocity * Time.fixedDeltaTime);
         
+        velocity.y += gravity * Time.deltaTime;
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, velocity.y, rb.linearVelocity.z);
     }
 }
 

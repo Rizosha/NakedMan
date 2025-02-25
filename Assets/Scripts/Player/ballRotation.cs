@@ -7,7 +7,7 @@ public class ballRotation : MonoBehaviour
 {
    public Transform mouse;
 
-   public void Update()
+   public void FixedUpdate()
    {
       //looks at mouse 
       transform.LookAt(mouse);

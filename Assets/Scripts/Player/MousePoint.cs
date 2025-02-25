@@ -19,6 +19,7 @@ public class MousePoint : MonoBehaviour
         if (Physics.Raycast(ray,out RaycastHit raycastHit, float.MaxValue,_layerMask))
         {
             transform.position = raycastHit.point;
+           //transform.position = new Vector3(raycastHit.point.x, transform.position.y, raycastHit.point.z);
         }
         
      
