@@ -6,7 +6,7 @@ public class OldCharacterMovement : MonoBehaviour
 {
  
     
-    public CharacterController controller;
+    public UnityEngine.CharacterController controller;
     
     public float speed = 12f;
     public float gravity = -9.81f;

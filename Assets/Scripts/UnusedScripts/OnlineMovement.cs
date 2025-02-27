@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private string verticalInputName;
     [SerializeField] private float movementSpeed;
 
-    private CharacterController charController;
+    private UnityEngine.CharacterController charController;
 
     [SerializeField] private AnimationCurve jumpFallOff;
     [SerializeField] private float jumpMultiplier;
@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Awake()
     {
-        charController = GetComponent<CharacterController>();
+        charController = GetComponent<UnityEngine.CharacterController>();
     }
 
     private void Update()
