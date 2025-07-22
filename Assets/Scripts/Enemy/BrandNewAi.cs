@@ -305,7 +305,7 @@ public class BrandNewAi : MonoBehaviour
     }
     
     //takes damage
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("pbullet"))
         {
