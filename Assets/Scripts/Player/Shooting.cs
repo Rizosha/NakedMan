@@ -23,22 +23,21 @@ namespace DefaultNamespace
         //public MousePoint mousePoint;
         public Transform player;
         public Vector3 direction;
+        
+       
 
         private void Start()
         {
             ammoUI = GameObject.Find("Ammo");
             gunshot = GetComponent<AudioSource>();
             //mousePoint = FindFirstObjectByType<MousePoint>(); // Get the MousePoint script
+          
         }
 
         
-		public void Update()
-		{
-			
-          direction = (aim.transform.position - player.position).normalized; 
-		}
+		
 
-		public void FixedUpdate()
+		public void Update()
         {
             // Timer for reloading
             if (shootTime < shootReloadTime)
@@ -59,11 +58,6 @@ namespace DefaultNamespace
                 }
             }
 
-            //direction = (aim.transform.position - player.position);
-            //direction = (aim.transform.position - player.position).normalized;
-            //direction = player.TransformDirection(direction);
-
-		
             
             if (shootReloading)
             {
@@ -83,8 +77,10 @@ namespace DefaultNamespace
                             pbullet.SetActive(true);
 
                             // Calculate direction from player to mouse point
+                            direction = aim.transform.position - player.position; 
+                            
+                            rb.AddForce(direction * velocity, ForceMode.Force);
                            
-                            rb.AddForce(direction.normalized * velocity, ForceMode.Force);
                             //rb.AddForce(finalDirection.normalized * velocity, ForceMode.Impulse);
 
                             bulletsLeft -= 1;

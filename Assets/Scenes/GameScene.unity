@@ -6383,7 +6383,7 @@ MonoBehaviour:
   gunshot: {fileID: 1018567476}
   gunClip: {fileID: 8300000, guid: 7ccc4e43a05642f4da355d60df2d4b79, type: 3}
   aim: {fileID: 1806115710}
-  player: {fileID: 860679611}
+  player: {fileID: 1364422789}
   direction: {x: 0, y: 0, z: 0}
 --- !u!1 &1019960474
 GameObject:
@@ -10342,7 +10342,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806115705}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
