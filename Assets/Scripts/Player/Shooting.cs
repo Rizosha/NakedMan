@@ -75,17 +75,20 @@ namespace DefaultNamespace
                         if (pbullet != null)
                         {
                             gunshot.PlayOneShot(gunClip);
-
+                            
+                            pbullet.transform.localRotation = Quaternion.Euler(-45, 180, playerRotation.angle);
+                            
                             Rigidbody rb = pbullet.GetComponent<Rigidbody>();
                             pbullet.transform.position = transform.position;
                             pbullet.SetActive(true);
-                            
+
+                           
 
                             // Calculate direction from player to mouse point
                             direction = aim.transform.position - player.position;
                             
                             
-                            rb.AddForce(direction * velocity, ForceMode.Force);
+                            rb.AddForce(direction.normalized * velocity, ForceMode.Impulse);
                            
                             //rb.AddForce(finalDirection.normalized * velocity, ForceMode.Impulse);
 
@@ -101,5 +104,3 @@ namespace DefaultNamespace
         }
     }
 }
-    
-    
