@@ -24,6 +24,8 @@ namespace DefaultNamespace
         public Transform player;
         public Vector3 direction;
         
+        private PlayerRotation playerRotation;
+        
        
 
         private void Start()
@@ -31,6 +33,8 @@ namespace DefaultNamespace
             ammoUI = GameObject.Find("Ammo");
             gunshot = GetComponent<AudioSource>();
             //mousePoint = FindFirstObjectByType<MousePoint>(); // Get the MousePoint script
+            
+            playerRotation = player.GetComponent<PlayerRotation>();
           
         }
 
@@ -75,9 +79,11 @@ namespace DefaultNamespace
                             Rigidbody rb = pbullet.GetComponent<Rigidbody>();
                             pbullet.transform.position = transform.position;
                             pbullet.SetActive(true);
+                            
 
                             // Calculate direction from player to mouse point
-                            direction = aim.transform.position - player.position; 
+                            direction = aim.transform.position - player.position;
+                            
                             
                             rb.AddForce(direction * velocity, ForceMode.Force);
                            

@@ -13,6 +13,8 @@ public class PlayerRotation : MonoBehaviour
 
     public Animator animator;
 
+    public float angle;
+
 
     private void Update()
     {
@@ -28,7 +30,8 @@ public class PlayerRotation : MonoBehaviour
         Debug.DrawRay(transform.position, direction, Color.green);
         
         //calculates angle of north and mouse direction
-        float angle = Vector3.Angle(direction, north);
+        angle = Vector3.Angle(direction, north);
+        
         if (cross.y < 0)
         {
             //makes the angle 360
