@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 public class Bullet : MonoBehaviour
 {
     private bool grounded = false;
-
+    private Rigidbody rb;
     public float gizmo;
     
     private float interval;
@@ -19,6 +19,20 @@ public class Bullet : MonoBehaviour
     /// <summary>
     /// Performs a grounded check to set a de-spawn time limit. 
     /// </summary>
+    
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void OnEnable()
+    {
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+    }
     public void Update()
     {
         grounded = Physics.CheckSphere(transform.position, gizmo);
